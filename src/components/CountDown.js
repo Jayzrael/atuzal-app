@@ -1,21 +1,52 @@
 import React from "react";
-import ReactAwesomeClock from "react-awesome-clock";
+import Countdown from "react-countdown";
 
-const CountDown = () => {
+function CountDown(props) {
+  const targetDate = new Date(props.targetDate);
+
+  const renderer = ({ days, hours, minutes, seconds }) => {
+    return (
+      <div className="flex justify-center items-center">
+        <div className="p-4 border-2 w-[50%] border-red-600 mt-32">
+          <p className=" font-bold text-lg">Offer Ends In:</p>
+          <div className="flex justify-center items-center mb-4">
+            <div className="p-4 bg-red-600 rounded-md text-white text-4xl font-bold">
+              <div className="flex flex-col items-center">
+                <span>{days}</span>
+                <span className="text-xs uppercase">Days</span>
+              </div>
+            </div>
+            <div className="p-4 bg-red-600 rounded-md text-white text-4xl font-bold">
+              <div className="flex flex-col items-center">
+                <span>{hours}</span>
+                <span className="text-xs uppercase">Hours</span>
+              </div>
+            </div>
+            <div className="p-4 bg-red-600 rounded-md text-white text-4xl font-bold">
+              <div className="flex flex-col items-center">
+                <span>{minutes}</span>
+                <span className="text-xs uppercase">Minutes</span>
+              </div>
+            </div>
+            <div className="p-4 bg-red-600 rounded-md text-white text-4xl font-bold">
+              <div className="flex flex-col items-center">
+                <span>{seconds}</span>
+                <span className="text-xs uppercase">Seconds</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
-    <div className="mt-24">
-      <ReactAwesomeClock
-        day={true}
-        style={{
-          color: "red",
-          fontSize: 60,
-          textShadow: "0 0 10px grey",
-          fontFamily: "aerial",
-        }}
-      />
-      {/* // Clock Component With Days Count */}
-    </div>
+    <Countdown
+      date={targetDate}
+      renderer={renderer}
+      onComplete={() => console.log("Countdown finished!")}
+    />
   );
-};
+}
 
 export default CountDown;

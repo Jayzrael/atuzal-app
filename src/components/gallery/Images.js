@@ -1,5 +1,6 @@
 import React from "react";
 import Gallery from "react-photo-gallery";
+import LazyLoad from "react-lazyload";
 
 const photos = [
   {
@@ -107,7 +108,9 @@ const photos = [
 const Images = () => {
   return (
     <div>
-      <Gallery photos={photos} />
+      <LazyLoad height={200} offset={100} placeholder={<div>Loading...</div>}>
+        <Gallery photos={photos} />
+      </LazyLoad>
     </div>
   );
 };

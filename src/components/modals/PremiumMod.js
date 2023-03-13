@@ -36,8 +36,8 @@ const PremiumMod = ({ openPremiumMod, ClosePremium }) => {
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           <p>SERVICE IN DESCRIPTION</p>
           <ul className="ml-3">
-            <li className="font-bold">2 Photographer.</li>
-            <li className="font-bold">1 Photographer</li>
+            <li className="font-bold">2 Photographers.</li>
+            <li className="font-bold">1 Videographer</li>
           </ul>
           <p className="mt-7">DELIVERY</p>
           <ul className="ml-3">

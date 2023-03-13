@@ -37,7 +37,7 @@ const StandardMod = ({ openMod, handleCloseMod }) => {
           <p>SERVICE IN DESCRIPTION</p>
           <ul className="ml-3">
             <li className="font-bold">1 Photographer.</li>
-            <li className="font-bold">1 Photographer</li>
+            <li className="font-bold">1 Videographer</li>
           </ul>
           <p className="mt-7">DELIVERY</p>
           <ul className="ml-3">
