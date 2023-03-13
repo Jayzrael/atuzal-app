@@ -7,7 +7,7 @@ function CountDown(props) {
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <div className="flex justify-center items-center">
-        <div className="p-4 border-2 w-[50%] border-red-600 mt-32">
+        <div className="p-4 border-2 w-[50%] sm:w-[80%] border-red-600 mt-32">
           <p className=" font-bold text-lg">Offer Ends In:</p>
           <div className="flex justify-center items-center mb-4">
             <div className="p-4 bg-red-600 rounded-md text-white text-4xl font-bold">

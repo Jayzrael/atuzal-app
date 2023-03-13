@@ -10,7 +10,7 @@ const ImagesSection = () => {
       <div className="flex flex-col justify-center items-center mb-10">
         <Images />
         <button className="text-white bg-slate-700 w-[140px] h-[40px] rounded-[5px] mt-2 hover:bg-slate-800  transition delay-150 duration-300 ... ">
-          View More
+          <a href="http://www.atuzalstudio.com">View More</a>
         </button>
       </div>
     </>

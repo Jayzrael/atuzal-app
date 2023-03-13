@@ -10,7 +10,7 @@ import Insta from "../images/pngegg.png";
 const Footer = () => {
   return (
     <div>
-      <div className="flex justify-center items-center gap-10 mb-5 ">
+      <div className="flex sm:flex-col justify-center items-center gap-10 mb-5 ">
         <p>
           <span className="font-bold">Address: </span> 19, Ogunsola st, Ogba,
           Lagos{" "}

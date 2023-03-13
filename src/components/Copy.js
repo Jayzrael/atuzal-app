@@ -3,7 +3,7 @@ import React from "react";
 const Copy = () => {
   return (
     <div className="flex justify-center items-center">
-      <h2 className="w-[70%] sm:w-[90%] text-center text-[24px]">
+      <h2 className="w-[70%] sm:w-[80%] text-center text-[24px]">
         I really hate the regret that comes after making a wrong decision on
         choice of photographer either due to finances or knowledge. Your wedding
         day is a once-in-a-lifetime event, and Atuzal Studio is committed to
